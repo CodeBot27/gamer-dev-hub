@@ -2,8 +2,8 @@ import { useEffect, useRef, useState } from 'react';
 import { User, Zap, Trophy, Clock } from 'lucide-react';
 
 const stats = [
-  { label: 'Years Active', value: '5+', icon: Clock },
-  { label: 'Projects Cleared', value: '50+', icon: Trophy },
+  { label: 'Years Active', value: '4+', icon: Clock },
+  { label: 'Projects Cleared', value: '35+', icon: Trophy },
   { label: 'Power Level', value: '9000+', icon: Zap },
 ];
 
@@ -50,7 +50,7 @@ const AboutSection = () => {
                     <User size={48} className="text-primary" />
                   </div>
                   <div className="absolute -bottom-2 -right-2 px-2 py-1 bg-neon-green text-background text-xs font-heading font-bold">
-                    LVL 25
+                    LVL 22
                   </div>
                 </div>
                 
@@ -62,7 +62,7 @@ const AboutSection = () => {
                     MSMITH
                   </h3>
                   <div className="text-sm text-muted-foreground font-heading">
-                    CLASS: Full-Stack Developer
+                    CLASS: Junior Full-Stack Developer
                   </div>
                 </div>
               </div>
@@ -134,8 +134,8 @@ const AboutSection = () => {
               <p>
                 When I'm not pushing commits, you'll find me grinding ranked matches,
                 exploring open worlds, or theorycrafting the perfect build. I believe
-                that the gaming mindset — the drive to optimize, improve, and never
-                give up — makes me a better developer.
+                that the gaming mindset: the drive to optimize, improve, and never
+                give up makes me a better developer.
               </p>
 
               <div className="pt-4">

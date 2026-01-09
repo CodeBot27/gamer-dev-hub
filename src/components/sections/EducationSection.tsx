@@ -1,38 +1,46 @@
-import { useEffect, useRef, useState } from 'react';
-import { GraduationCap, CheckCircle2, Circle } from 'lucide-react';
+import { useEffect, useRef, useState } from "react";
+import { GraduationCap, CheckCircle2, Circle } from "lucide-react";
 
 const education = [
   {
     id: 1,
-    degree: 'Master of Computer Science',
-    institution: 'Tech University',
-    period: '2020 - 2022',
-    status: 'completed',
-    achievements: ['AI & Machine Learning Specialization', 'Research Published', 'Dean\'s List'],
+    degree: "Full Stack Developer Intern",
+    institution: "Life Choices Studio",
+    period: "Sep 2025 - Present",
+    status: "ongoing",
+    achievements: ["Flutter", "Python", "Supabase", "Wordpress"],
   },
   {
     id: 2,
-    degree: 'Bachelor of Software Engineering',
-    institution: 'State University',
-    period: '2016 - 2020',
-    status: 'completed',
-    achievements: ['Summa Cum Laude', 'Hackathon Winner x3', 'Teaching Assistant'],
+    degree: "Full Stack Development Course",
+    institution: "Life Choices Academy",
+    period: "Apr 2025 - Sep 2025",
+    status: "completed",
+    achievements: [
+      "Vue",
+      "Node.js",
+      "TypeScript",
+      "Express",
+      "MySQL",
+      "PHP",
+      "Tailwind CSS",
+    ],
   },
   {
     id: 3,
-    degree: 'Certified Cloud Architect',
-    institution: 'AWS Academy',
-    period: '2021',
-    status: 'completed',
-    achievements: ['Solutions Architect Professional', 'Top 5% Score'],
+    degree: "Diploma in Software Development",
+    institution: "College of Cape Town",
+    period: "Jan 2024 - Dec 2024",
+    status: "completed",
+    achievements: ["UI/UX Design", "C#", "ASP.NET", "SQL Server"],
   },
   {
     id: 4,
-    degree: 'Game Development Bootcamp',
-    institution: 'GameDev Institute',
-    period: '2019',
-    status: 'completed',
-    achievements: ['Unity Certified Developer', 'Published Indie Title'],
+    degree: "Software Development Bootcamp",
+    institution: "Codespace Academy",
+    period: "Jan 2023 - Dec 2023",
+    status: "completed",
+    achievements: ["Html", "Css", "Javascript", "Figma", "Bootstrap", "React"],
   },
 ];
 
@@ -69,15 +77,15 @@ const EducationSection = () => {
       <div className="container mx-auto px-4">
         <div
           className={`text-center mb-16 transition-all duration-700 ${
-            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
           <h2 className="section-heading text-3xl md:text-4xl font-heading neon-text inline-block">
             Training Log
           </h2>
           <p className="mt-6 text-muted-foreground max-w-2xl mx-auto">
-            The skills forged through years of study and practice. Each milestone
-            unlocked new abilities in my developer arsenal.
+            The skills forged through years of study and practice. Each
+            milestone unlocked new abilities in my developer arsenal.
           </p>
         </div>
 
@@ -90,26 +98,28 @@ const EducationSection = () => {
             <div
               key={item.id}
               className={`relative mb-12 last:mb-0 transition-all duration-700 ${
-                isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+                isVisible
+                  ? "opacity-100 translate-y-0"
+                  : "opacity-0 translate-y-10"
               }`}
               style={{ transitionDelay: `${index * 150}ms` }}
             >
               <div
                 className={`flex flex-col md:flex-row items-start gap-8 ${
-                  index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
+                  index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
                 }`}
               >
                 {/* Timeline Node */}
                 <div className="absolute left-4 md:left-1/2 -translate-x-1/2 z-10">
                   <div
                     className={`w-8 h-8 rounded-full flex items-center justify-center transition-all duration-500 ${
-                      item.status === 'completed'
-                        ? 'bg-neon-green/20 border-2 border-neon-green'
-                        : 'bg-secondary border-2 border-primary'
+                      item.status === "completed"
+                        ? "bg-neon-green/20 border-2 border-neon-green"
+                        : "bg-secondary border-2 border-primary"
                     }`}
                     style={{ transitionDelay: `${index * 150 + 200}ms` }}
                   >
-                    {item.status === 'completed' ? (
+                    {item.status === "completed" ? (
                       <CheckCircle2 size={16} className="text-neon-green" />
                     ) : (
                       <Circle size={16} className="text-primary" />
@@ -118,7 +128,11 @@ const EducationSection = () => {
                 </div>
 
                 {/* Content Card */}
-                <div className={`ml-16 md:ml-0 md:w-[calc(50%-2rem)] ${index % 2 === 0 ? 'md:pr-8' : 'md:pl-8'}`}>
+                <div
+                  className={`ml-16 md:ml-0 md:w-[calc(50%-2rem)] ${
+                    index % 2 === 0 ? "md:pr-8" : "md:pl-8"
+                  }`}
+                >
                   <div className="game-card hud-border p-6">
                     <div className="flex items-start gap-4 mb-4">
                       <div className="p-2 bg-primary/10 rounded-sm">
@@ -145,13 +159,15 @@ const EducationSection = () => {
                           className="flex items-center gap-2 text-sm"
                         >
                           <div className="w-1.5 h-1.5 bg-neon-green rounded-full" />
-                          <span className="text-muted-foreground">{achievement}</span>
+                          <span className="text-muted-foreground">
+                            {achievement}
+                          </span>
                         </div>
                       ))}
                     </div>
 
                     {/* Completion Badge */}
-                    {item.status === 'completed' && (
+                    {item.status === "completed" && (
                       <div className="mt-4 inline-flex items-center gap-2 px-3 py-1 bg-neon-green/10 border border-neon-green/30 rounded-sm">
                         <CheckCircle2 size={12} className="text-neon-green" />
                         <span className="text-xs font-heading text-neon-green tracking-widest">

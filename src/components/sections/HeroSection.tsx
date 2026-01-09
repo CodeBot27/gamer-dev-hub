@@ -91,8 +91,8 @@ const HeroSection = () => {
             isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
           }`}
         >
-          <span className="relative inline-block glitch-text neon-text" data-text="MSMITH">
-            MSMITH
+          <span className="relative inline-block glitch-text neon-text" data-text="Mogamat Smith">
+            Mogamat Smith
           </span>
         </h1>
 

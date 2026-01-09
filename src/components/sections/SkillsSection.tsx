@@ -7,10 +7,10 @@ const skillCategories = [
     icon: Code,
     color: 'primary',
     skills: [
-      { name: 'React / Next.js', level: 95 },
-      { name: 'TypeScript', level: 90 },
+      { name: 'React / Next.js', level: 92 },
+      { name: 'TypeScript', level: 86 },
       { name: 'Tailwind CSS', level: 92 },
-      { name: 'Three.js / WebGL', level: 75 },
+      { name: 'HTML / CSS', level: 95 },
     ],
   },
   {
@@ -19,9 +19,9 @@ const skillCategories = [
     color: 'neon-green',
     skills: [
       { name: 'Node.js / Express', level: 88 },
-      { name: 'Python / FastAPI', level: 82 },
+      { name: 'Python / FastAPI', level: 84 },
       { name: 'PostgreSQL / MongoDB', level: 85 },
-      { name: 'GraphQL', level: 78 },
+      { name: 'Supabase / Firebase', level: 93 },
     ],
   },
   {
@@ -30,20 +30,20 @@ const skillCategories = [
     color: 'neon-gold',
     skills: [
       { name: 'Git / GitHub', level: 94 },
-      { name: 'Docker / K8s', level: 80 },
-      { name: 'AWS / GCP', level: 85 },
-      { name: 'CI/CD Pipelines', level: 82 },
+      { name: 'Netlify / Vercel', level: 92 },
+      { name: 'Render', level: 85 },
+      { name: 'FileZilla', level: 88 },
     ],
   },
   {
-    title: 'Game Dev',
-    icon: Gamepad2,
+    title: 'Top Projects',
+    icon: Code,
     color: 'neon-red',
     skills: [
-      { name: 'Unity / C#', level: 75 },
-      { name: 'Unreal Engine', level: 65 },
-      { name: 'Godot', level: 70 },
-      { name: 'Game Design', level: 80 },
+      { name: 'Astrielle', level: 96 },
+      { name: 'SkyLens Weather App', level: 94 },
+      { name: 'Modern Tech Solutions', level: 92 },
+      { name: 'Lyrics Snatcher', level: 90 },
     ],
   },
 ];

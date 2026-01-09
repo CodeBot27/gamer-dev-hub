@@ -16,7 +16,7 @@ const Footer = () => {
 
           {/* Copyright */}
           <div className="text-sm text-muted-foreground text-center">
-            <span className="font-heading tracking-wider">© 2024 MSMITH</span>
+            <span className="font-heading tracking-wider">&copy; {new Date().getFullYear()} MSMITH</span>
             <span className="mx-2">|</span>
             <span>All Rights Reserved</span>
           </div>

@@ -63,7 +63,7 @@ const HudNav = () => {
               }}
               className="font-heading text-xl md:text-2xl tracking-widest text-gradient"
             >
-              MSMITH
+              MSMITH.
             </a>
 
             {/* Desktop Nav */}
