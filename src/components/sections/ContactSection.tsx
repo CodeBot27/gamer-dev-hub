@@ -2,9 +2,8 @@ import { useEffect, useRef, useState } from 'react';
 import { Send, MapPin, Mail, Github, Linkedin, Twitter } from 'lucide-react';
 
 const socialLinks = [
-  { icon: Github, label: 'GitHub', href: '#' },
-  { icon: Linkedin, label: 'LinkedIn', href: '#' },
-  { icon: Twitter, label: 'Twitter', href: '#' },
+  { icon: Github, label: 'GitHub', href: 'https://github.com/kxngzero329' },
+  { icon: Linkedin, label: 'LinkedIn', href: 'https://www.linkedin.com/in/suhair-smith-kxngzero329/' }
 ];
 
 const ContactSection = () => {
@@ -90,7 +89,7 @@ const ContactSection = () => {
                     <div className="text-xs font-heading text-primary tracking-widest mb-1">
                       LOCATION
                     </div>
-                    <span className="text-foreground">Digital Realm, Global</span>
+                    <span className="text-foreground">Cape Town, South Africa</span>
                   </div>
                 </div>
 
@@ -102,7 +101,7 @@ const ContactSection = () => {
                     <div className="text-xs font-heading text-primary tracking-widest mb-1">
                       EMAIL
                     </div>
-                    <span className="text-foreground">player@msmith.dev</span>
+                    <span className="text-foreground">suhairsmith17@gmail.com</span>
                   </div>
                 </div>
               </div>
