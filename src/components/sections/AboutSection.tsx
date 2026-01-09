@@ -46,8 +46,12 @@ const AboutSection = () => {
               {/* Avatar Container */}
               <div className="flex items-start gap-6 mb-8">
                 <div className="relative">
-                  <div className="w-24 h-24 md:w-32 md:h-32 bg-gradient-to-br from-primary/20 to-neon-green/20 rounded-sm flex items-center justify-center border border-primary/30">
-                    <User size={48} className="text-primary" />
+                  <div className="w-24 h-24 md:w-32 md:h-32 bg-gradient-to-br from-primary/20 to-neon-green/20 rounded-sm flex items-center justify-center border border-primary/30 overflow-hidden">
+                    <img 
+                      src="/smith_formal2.png" 
+                      alt="Profile" 
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                   <div className="absolute -bottom-2 -right-2 px-2 py-1 bg-neon-green text-background text-xs font-heading font-bold">
                     LVL 22
