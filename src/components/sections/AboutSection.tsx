@@ -82,18 +82,18 @@ const AboutSection = () => {
               </div>
 
               {/* Stats Grid */}
-              <div className="grid grid-cols-3 gap-4">
+              <div className="grid grid-cols-3 gap-2 md:gap-4">
                 {stats.map((stat, index) => {
                   const Icon = stat.icon;
                   return (
                     <div
                       key={stat.label}
-                      className="text-center p-4 bg-secondary/50 rounded-sm border border-border"
+                      className="text-center p-2 md:p-4 bg-secondary/50 rounded-sm border border-border overflow-hidden"
                       style={{ transitionDelay: `${index * 100 + 300}ms` }}
                     >
-                      <Icon size={20} className="mx-auto mb-2 text-primary" />
-                      <div className="stat-value">{stat.value}</div>
-                      <div className="stat-label">{stat.label}</div>
+                      <Icon size={16} className="mx-auto mb-1 md:mb-2 text-primary md:w-5 md:h-5" />
+                      <div className="text-base md:text-2xl font-bold text-primary font-heading truncate">{stat.value}</div>
+                      <div className="text-[10px] md:text-xs uppercase tracking-wider md:tracking-widest text-muted-foreground font-heading leading-tight">{stat.label}</div>
                     </div>
                   );
                 })}
