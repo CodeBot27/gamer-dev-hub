@@ -117,7 +117,7 @@ const AboutSection = () => {
 
             <div className="space-y-6 text-muted-foreground">
               <p className="text-lg">
-                Welcome to my digital realm. I'm a passionate{' '}
+                Welcome to my digital realm. I'm Mogamat Smith, a passionate{' '}
                 <span className="text-primary">full-stack developer</span> and{' '}
                 <span className="text-neon-green">dedicated gamer</span> who believes
                 that the best code is written with the same intensity as a competitive

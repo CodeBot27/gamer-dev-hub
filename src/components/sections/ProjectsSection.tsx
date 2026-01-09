@@ -1,5 +1,11 @@
 import { useEffect, useRef, useState } from 'react';
 import { ExternalLink, Github, ChevronRight, Crosshair } from 'lucide-react';
+import mts from "@/assets/mtsnew.png";
+import brew from "@/assets/brew.png";
+import todo from "@/assets/todo.png";
+import astrielle from "@/assets/astrielle.png";
+import skylens from "@/assets/skylens.png";
+import client1 from "@/assets/client1.png";
 
 const projects = [
   {
@@ -9,7 +15,7 @@ const projects = [
     description: 'A real-time weather forecasting app with interactive maps and detailed analytics.',
     tech: ['React', 'TypeScript', 'OpenWeatherMap API', 'CSS'],
     difficulty: 'EPIC',
-    image: '/placeholder.svg',
+    image: skylens,
   },
   {
     id: 2,
@@ -18,7 +24,7 @@ const projects = [
     description: 'A modern and user-friendly e-commerce platform for fashion enthusiasts.',
     tech: ['React', 'TypeScript', 'Supabase', 'PostgreSQL'],
     difficulty: 'LEGENDARY',
-    image: '/placeholder.svg',
+    image: astrielle,
   },
   {
     id: 3,
@@ -27,7 +33,7 @@ const projects = [
     description: 'A modern and user-friendly e-commerce platform for coffee brewing enthusiasts.',
     tech: ['PHP', 'MySQL', 'CSS'],
     difficulty: 'LEGENDARY',
-    image: '/placeholder.svg',
+    image: brew,
   },
   {
     id: 4,
@@ -36,7 +42,7 @@ const projects = [
     description: 'A simple and user-friendly to-do app with task management features.',
     tech: ['React', 'TypeScript', 'Tailwind CSS'],
     difficulty: 'EPIC',
-    image: '/placeholder.svg',
+    image: todo,
   },
   {
     id: 5,
@@ -45,7 +51,7 @@ const projects = [
     description: 'A comprehensive HR management system for employee records and payroll.',
     tech: ['React', 'TypeScript', 'Supabase', 'PostgreSQL'],
     difficulty: 'LEGENDARY',
-    image: '/placeholder.svg',
+    image: mts,
   },
   {
     id: 6,
@@ -54,7 +60,7 @@ const projects = [
     description: 'An online Nail Salon for beauty enthusiasts. (My First Client)',
     tech: ['HTML', 'CSS', 'JavaScript', 'Formspree'],
     difficulty: 'RARE',
-    image: '/placeholder.svg',
+    image: client1,
   },
 ];
 
@@ -124,12 +130,20 @@ const ProjectsSection = () => {
             >
               {/* Project Image / Placeholder */}
               <div className="relative h-48 bg-gradient-to-br from-secondary to-muted overflow-hidden">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <Crosshair
-                    size={48}
-                    className="text-primary/30 group-hover:text-primary/60 transition-all duration-300 group-hover:scale-110"
+                {project.image ? (
+                  <img 
+                    src={project.image} 
+                    alt={project.title} 
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
-                </div>
+                ) : (
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <Crosshair
+                      size={48}
+                      className="text-primary/30 group-hover:text-primary/60 transition-all duration-300 group-hover:scale-110"
+                    />
+                  </div>
+                )}
                 
                 {/* Scan effect on hover */}
                 <div
