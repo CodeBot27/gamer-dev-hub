@@ -92,7 +92,7 @@ const AboutSection = () => {
                       style={{ transitionDelay: `${index * 100 + 300}ms` }}
                     >
                       <Icon size={16} className="mx-auto mb-1 md:mb-2 text-primary md:w-5 md:h-5" />
-                      <div className="text-base md:text-2xl font-bold text-primary font-heading truncate">{stat.value}</div>
+                      <div className="text-base md:text-xl lg:text-2xl font-bold text-primary font-heading truncate md:truncate-none md:whitespace-nowrap">{stat.value}</div>
                       <div className="text-[10px] md:text-xs uppercase tracking-wider md:tracking-widest text-muted-foreground font-heading leading-tight">{stat.label}</div>
                     </div>
                   );
