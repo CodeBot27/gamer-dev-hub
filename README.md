@@ -1,73 +1,88 @@
-# Welcome to your Lovable project
+# MSMITH – Developer Portfolio
 
-## Project info
+Welcome to my personal portfolio repository. This project showcases my background, skills, education, and selected projects as a **Junior Full-Stack Developer** based in Cape Town, South Africa.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+---
 
-## How can I edit this code?
+## 🚀 Live Demo
 
-There are several ways of editing your application.
+👉 **View Portfolio:** https://your-portfolio-link.com  
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+## About Me
 
-Changes made via Lovable will be committed automatically to this repo.
+I’m **Mogamat Smith**, a Junior Full-Stack Developer with experience building responsive web applications and full-stack solutions. I enjoy creating clean, efficient, and scalable software, with a strong focus on usability, performance, and maintainability.
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Portfolio Sections
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- **Home** – Introduction and overview  
+- **About** – Background and development mindset  
+- **Education** – Training and certifications  
+- **Loadout (Skills)** – Technical skills and tools  
+- **Missions (Projects)** – Selected projects and case studies  
+- **Contact** – Ways to get in touch  
 
-Follow these steps:
+---
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## Education & Experience
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+- **Full Stack Developer Intern** – Life Choices Studio (Sep 2025 – Present)  
+- **Full Stack Development Course** – Life Choices Academy (Apr 2025 – Sep 2025)  
+- **Diploma in Software Development** – College of Cape Town (Jan 2024 – Dec 2024)  
+- **Software Development Bootcamp** – Codespace Academy (Jan 2023 – Dec 2023)  
 
-# Step 3: Install the necessary dependencies.
-npm i
+---
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+## Skills
 
-**Edit a file directly in GitHub**
+### Frontend
+- React / Next.js  
+- TypeScript  
+- Tailwind CSS  
+- HTML & CSS  
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Backend
+- Node.js & Express  
+- Python & FastAPI  
+- PHP  
+- MySQL, PostgreSQL, MongoDB  
+- Supabase & Firebase  
 
-**Use GitHub Codespaces**
+### Tools & Platforms
+- Git & GitHub  
+- Netlify, Vercel, Render  
+- Figma  
+- FileZilla  
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+---
 
-## What technologies are used for this project?
+## Projects
 
-This project is built with:
+- **SkyLens Weather App** – Real-time weather application  
+- **Astrielle E-Commerce** – Fashion e-commerce platform  
+- **Brew Craft E-Commerce** – Coffee brewing e-commerce site  
+- **Modern Tech Solutions** – HR and payroll system  
+- **Beauty By Geraldine** – Client website (Nail Salon)  
+- **To-Do App** – Task management application  
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+---
 
-## How can I deploy this project?
+## Status
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+Open to junior roles, internships, freelance work, and collaborations.
 
-## Can I connect a custom domain to my Lovable project?
+---
 
-Yes, you can!
+## Contact
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+- **Email:** suhairsmith17@gmail.com  
+- **Location:** Cape Town, South Africa  
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+---
+
+## License
+
+© 2026 MSMITH. All rights reserved.
