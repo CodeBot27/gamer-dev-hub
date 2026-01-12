@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
-import { Send, MapPin, Mail, Github, Linkedin, Twitter } from 'lucide-react';
+import { Send, MapPin, Mail, Github, Linkedin } from 'lucide-react';
+import { useToast } from '@/hooks/use-toast';
 
 const socialLinks = [
   { icon: Github, label: 'GitHub', href: 'https://github.com/kxngzero329' },
@@ -15,6 +16,7 @@ const ContactSection = () => {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
+  const { toast } = useToast();
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -36,11 +38,39 @@ const ContactSection = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    // Simulate submission
-    await new Promise((resolve) => setTimeout(resolve, 1500));
-    setIsSubmitting(false);
-    setFormState({ name: '', email: '', message: '' });
-    alert('Message sent! (Demo only)');
+    
+    try {
+      const response = await fetch('https://formspree.io/f/mojjqvlj', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          name: formState.name,
+          email: formState.email,
+          message: formState.message
+        })
+      });
+
+      if (response.ok) {
+        toast({
+          title: "Transmission Successful! 🎮",
+          description: "Your message has been sent. I'll respond to your mission request soon!",
+        });
+        setFormState({ name: '', email: '', message: '' });
+      } else {
+        throw new Error('Failed to send message');
+      }
+    } catch (error) {
+      toast({
+        title: "Transmission Failed",
+        description: "Something went wrong. Please try again or contact me directly via email.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
