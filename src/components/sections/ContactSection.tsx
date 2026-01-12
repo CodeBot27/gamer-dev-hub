@@ -55,7 +55,7 @@ const ContactSection = () => {
 
       if (response.ok) {
         toast({
-          title: "Transmission Successful! 🎮",
+          title: "Transmission Successful!",
           description: "Your message has been sent. I'll respond to your mission request soon!",
         });
         setFormState({ name: '', email: '', message: '' });
@@ -202,7 +202,7 @@ const ContactSection = () => {
                       setFormState((prev) => ({ ...prev, name: e.target.value }))
                     }
                     className="input-gaming"
-                    placeholder="Enter your handle..."
+                    placeholder="Enter your name..."
                     required
                   />
                 </div>
