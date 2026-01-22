@@ -5,7 +5,7 @@ import brew from "@/assets/brew.png";
 import todo from "@/assets/todo.png";
 import astrielle from "@/assets/astrielle.png";
 import skylens from "@/assets/skylens.png";
-import client1 from "@/assets/client1.png";
+import podhut from "@/assets/podhut.png";
 
 const projects = [
   {
@@ -65,14 +65,14 @@ const projects = [
   },
   {
     id: 6,
-    title: "Beauty By Geraldine",
+    title: "PodHut",
     category: "Website",
     description:
-      "An online Nail Salon for beauty enthusiasts. (My First Client)",
-    tech: ["HTML", "CSS", "JavaScript", "Formspree"],
-    difficulty: "RARE",
-    image: client1,
-    missionUrl: "https://beauty-by-geraldine.netlify.app/",
+      "An online platform for podcast enthusiasts for listening to podcasts.",
+    tech: ["React", "Tailwind CSS", "TypeScript", "Supabase", "Api"],
+    difficulty: "LEGENDARY",
+    image: podhut,
+    missionUrl: "https://podhut.netlify.app/",
   },
 ];
 
