@@ -41,9 +41,10 @@ const skillCategories = [
     color: 'neon-red',
     skills: [
       { name: 'Astrielle', level: 96 },
+      { name: 'PodHut', level: 94 },
       { name: 'SkyLens Weather App', level: 94 },
       { name: 'Modern Tech Solutions', level: 92 },
-      { name: 'Lyrics Snatcher', level: 90 },
+      
     ],
   },
 ];
