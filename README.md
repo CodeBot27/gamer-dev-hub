@@ -6,7 +6,7 @@ Welcome to my personal portfolio repository. This project showcases my backgroun
 
 ## 🚀 Live Demo
 
-👉 **View Portfolio:** https://your-portfolio-link.com  
+👉 **View Portfolio:** https://mogamatsm.netlify.app 
 
 ---
 
