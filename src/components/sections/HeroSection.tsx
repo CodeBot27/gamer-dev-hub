@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { ChevronDown, Crosshair, Gamepad2 } from 'lucide-react';
+import { ChevronDown, Crosshair, Download, Gamepad2 } from 'lucide-react';
 import Particles from '../Particles';
 
 const HeroSection = () => {
@@ -124,15 +124,18 @@ const HeroSection = () => {
             isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
           }`}
         >
-          <button
-            onClick={() => scrollToSection('projects')}
+          <a
+            href="/Mogamat_Smith_CV.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            download
             className="btn-gaming-primary"
           >
             <span className="relative z-10 flex items-center gap-2">
-              <Crosshair size={16} />
-              View Missions
+              <Download size={16} />
+              Download CV
             </span>
-          </button>
+          </a>
           <button
             onClick={() => scrollToSection('contact')}
             className="btn-gaming"
