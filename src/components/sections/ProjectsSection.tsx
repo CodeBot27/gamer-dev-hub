@@ -207,20 +207,6 @@ const ProjectsSection = () => {
                       />
                     </a>
 
-                    <a
-                      href="/Mogamat_Smith_CV.pdf"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      download
-                      className="relative flex items-center gap-2 text-sm font-heading text-neon-gold hover:text-neon-green transition-colors group/cv"
-                    >
-                      <span>VIEW CV</span>
-                      <ChevronRight
-                        size={16}
-                        className="group-hover/cv:translate-x-1 transition-transform"
-                      />
-                    </a>
-
                     <button
                       onClick={() => setActiveImage(project.image)}
                       className="relative ml-auto text-muted-foreground hover:text-primary transition-colors group/img"
