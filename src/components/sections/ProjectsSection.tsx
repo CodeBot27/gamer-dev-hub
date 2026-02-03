@@ -205,11 +205,20 @@ const ProjectsSection = () => {
                         size={16}
                         className="group-hover/btn:translate-x-1 transition-transform"
                       />
+                    </a>
 
-                      {/* Tooltip */}
-                      {/* <span className="absolute -top-10 left-0 opacity-0 group-hover/btn:opacity-100 transition-all duration-300 text-xs bg-background border border-border px-2 py-1 rounded-sm neon-text">
-                        Open Live Site
-                      </span> */}
+                    <a
+                      href="/Mogamat_Smith_CV.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      download
+                      className="relative flex items-center gap-2 text-sm font-heading text-neon-gold hover:text-neon-green transition-colors group/cv"
+                    >
+                      <span>VIEW CV</span>
+                      <ChevronRight
+                        size={16}
+                        className="group-hover/cv:translate-x-1 transition-transform"
+                      />
                     </a>
 
                     <button
